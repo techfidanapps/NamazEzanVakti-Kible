@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Namaz Vakti — Gizlilik Politikası</title>
+<style>
+  :root{
+    --bg:#faf8f4;
+    --surface:#ffffff;
+    --border:#e4ddd0;
+    --text:#1f231f;
+    --text-muted:#5b6157;
+    --accent:#2f6b4f;
+    --accent-soft:#e7f0ea;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#141712;
+      --surface:#1b1f19;
+      --border:#2c3128;
+      --text:#eceae4;
+      --text-muted:#a7ac9f;
+      --accent:#7fc79f;
+      --accent-soft:#20281f;
+    }
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--text);
+    font-family:"Segoe UI",-apple-system,BlinkMacSystemFont,"Source Sans 3",sans-serif;
+    line-height:1.65;
+    padding-inline:16px;
+  }
+  .wrap{
+    max-width:720px;
+    margin:0 auto;
+    padding-block:48px 64px;
+  }
+  h1{
+    font-family:Georgia,"Times New Roman",serif;
+    font-weight:600;
+    font-size:clamp(28px,5vw,38px);
+    line-height:1.15;
+    margin:0 0 6px;
+  }
+  .subtitle{
+    color:var(--text-muted);
+    font-size:15px;
+    margin:0 0 36px;
+  }
+  .card{
+    background:var(--surface);
+    border:1px solid var(--border);
+    border-radius:14px;
+    padding:20px 22px;
+    margin-bottom:28px;
+  }
+  .card p{margin:0;}
+  h2{
+    font-family:Georgia,"Times New Roman",serif;
+    font-weight:600;
+    font-size:21px;
+    margin:40px 0 12px;
+  }
+  h2:first-of-type{margin-top:0;}
+  p{margin:0 0 14px;}
+  ul{margin:0 0 14px; padding-left:22px;}
+  li{margin-bottom:8px;}
+  .data-table{
+    width:100%;
+    border-collapse:collapse;
+    margin:8px 0 20px;
+    font-size:14.5px;
+  }
+  .data-table th, .data-table td{
+    text-align:left;
+    padding:10px 12px;
+    border-bottom:1px solid var(--border);
+    vertical-align:top;
+  }
+  .data-table th{
+    color:var(--text-muted);
+    font-weight:600;
+    font-size:13px;
+    text-transform:uppercase;
+    letter-spacing:.04em;
+  }
+  .data-table tr:last-child td{border-bottom:none;}
+  .pill{
+    display:inline-block;
+    background:var(--accent-soft);
+    color:var(--accent);
+    border-radius:999px;
+    padding:2px 10px;
+    font-size:12.5px;
+    font-weight:600;
+  }
+  .contact{
+    background:var(--accent-soft);
+    border-radius:14px;
+    padding:20px 22px;
+    margin-top:36px;
+  }
+  .contact p{margin:0;}
+  .contact a{color:var(--accent); font-weight:600; text-decoration:none;}
+  .contact a:hover{text-decoration:underline;}
+  footer{
+    margin-top:40px;
+    padding-top:20px;
+    border-top:1px solid var(--border);
+    color:var(--text-muted);
+    font-size:13px;
+  }
+  @media (max-width:520px){
+    .data-table{font-size:13.5px;}
+    .data-table th, .data-table td{padding:8px 8px;}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Namaz Vakti — Gizlilik Politikası</h1>
+  <p class="subtitle">Son güncelleme: 26 Eylül 2026</p>
+
+  <div class="card">
+    <p>Bu sayfa, <strong>Namaz Vakti</strong> mobil uygulamasının (Google Play üzerinde <code>com.techfidanapps.namazvakti</code> paket adıyla yayınlanır) hangi verileri neden topladığını, nasıl kullandığını ve kiminle paylaştığını açıklar. Uygulama TechFidan Apps tarafından geliştirilmiştir.</p>
+  </div>
+
+  <h2>Kısaca</h2>
+  <p>Namaz Vakti; konum, kamera ve bildirim izinlerini yalnızca kendi işlevleri için, cihazınız üzerinde kullanır. Kişisel bir kullanıcı hesabı oluşturmanızı istemeyiz ve topladığımız verileri satmayız.</p>
+
+  <h2>Topladığımız ve kullandığımız veriler</h2>
+  <table class="data-table">
+    <tr>
+      <th>Veri</th>
+      <th>Ne için kullanılır</th>
+      <th>Nereye gider</th>
+    </tr>
+    <tr>
+      <td>Konum (enlem/boylam)</td>
+      <td>Namaz vakitlerini, kıble yönünü ve yakındaki camileri hesaplamak</td>
+      <td>Cihazınızda işlenir. Yakındaki camileri ararken enlem/boylam bilginiz, sonuç almak için OpenStreetMap'in Overpass sunucusuna bir sorgu parametresi olarak gönderilir; bizim sunucularımızda saklanmaz.</td>
+    </tr>
+    <tr>
+      <td>Kamera görüntüsü</td>
+      <td>"Kamera ile Kıble Bul" özelliğinde canlı önizleme göstermek</td>
+      <td>Yalnızca cihazınızda işlenir, hiçbir görüntü kaydedilmez veya gönderilmez.</td>
+    </tr>
+    <tr>
+      <td>Bildirim tercihleri</td>
+      <td>Namaz vakti, kerahet vakti ve günlük içerik hatırlatmalarını zamanlamak</td>
+      <td>Yalnızca cihazınızda saklanır.</td>
+    </tr>
+    <tr>
+      <td>Temel kullanım verisi (uygulama açılışları, çökme raporları)</td>
+      <td>Uygulamanın kararlılığını izlemek ve iyileştirmek</td>
+      <td>Google Firebase Analytics üzerinden toplanır.</td>
+    </tr>
+    <tr>
+      <td>Reklam kimliği ve genel cihaz bilgisi</td>
+      <td>Uygulama içindeki banner reklamları göstermek</td>
+      <td>Google AdMob üzerinden işlenir.</td>
+    </tr>
+  </table>
+
+  <p>Ayet, hadis, dua ve esma-ül hüsna içerikleri Google Firebase Firestore üzerinden yalnızca <strong>okunur</strong> — bu sorgular herhangi bir kişisel veya konum verisi içermez.</p>
+
+  <h2>İzinler</h2>
+  <ul>
+    <li><span class="pill">Konum</span> — namaz vakitleri, kıble yönü ve yakındaki camiler için.</li>
+    <li><span class="pill">Kamera</span> — yalnızca "Kamera ile Kıble Bul" özelliği açıkken.</li>
+    <li><span class="pill">Bildirimler</span> — namaz vakti, kerahet vakti ve günlük içerik hatırlatmaları için.</li>
+    <li><span class="pill">İnternet</span> — namaz vakti hesaplaması için şehir arama, ayet/hadis/dua içeriği çekme ve reklam gösterimi için.</li>
+  </ul>
+  <p>Tüm izinler isteğe bağlıdır; reddetseniz de uygulamanın izinle ilgisiz bölümlerini kullanmaya devam edebilirsiniz.</p>
+
+  <h2>Üçüncü taraf hizmetler</h2>
+  <p>Uygulama şu üçüncü taraf hizmetleri kullanır, her biri kendi gizlilik politikasına tabidir:</p>
+  <ul>
+    <li><strong>Google Firebase</strong> (Firestore, Analytics)</li>
+    <li><strong>Google AdMob</strong> (uygulama içi reklamlar)</li>
+    <li><strong>OpenStreetMap / Overpass API</strong> (yakındaki cami arama)</li>
+  </ul>
+
+  <h2>Veri saklama ve silme</h2>
+  <p>Uygulama bir kullanıcı hesabı sistemi kullanmaz. Bildirim tercihleri, kayıtlı konumlar ve okuma geçmişi gibi veriler yalnızca kendi cihazınızda saklanır; uygulamayı kaldırdığınızda bu veriler de silinir.</p>
+
+  <h2>Çocukların gizliliği</h2>
+  <p>Namaz Vakti belirli bir yaş grubunu hedeflemez ve bilerek 13 yaşından küçük çocuklardan kişisel veri toplamaz.</p>
+
+  <h2>Bu politikadaki değişiklikler</h2>
+  <p>Bu sayfa güncellendiğinde, yukarıdaki "Son güncelleme" tarihi de güncellenir. Önemli değişikliklerde uygulama içinde bir bildirim gösterilebilir.</p>
+
+  <div class="contact">
+    <p>Sorularınız için: <a href="mailto:techfidanapss@gmail.com">techfidanapss@gmail.com</a></p>
+  </div>
+
+  <footer>
+    Namaz Vakti — TechFidan Apps
+  </footer>
+</div>
+</body>
+</html>
